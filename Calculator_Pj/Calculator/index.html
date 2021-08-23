@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="icon" href="img/calculator.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <section class="main">
+        <div class="container">
+            <div class="container-box">
+                <div class="item">
+<!--                    imgbox -->
+                    <div class="img_box">
+                        <img src="img/calculator.svg" alt="">
+                    </div>
+<!--                    result -->
+                    <div class="result_box" >
+                        <h2 class="result" id="result">0.00</h2>
+                    </div>
+<!--                    input -->
+                    <div class="input_box">
+                        <div class="box-one">
+                            <label for="fName"></label>
+                            <input type="number" autofocus name="fName" id="fName" required>
+                        </div>
+                        <div class="box-two">
+                            <label for="sName"></label>
+                            <input type="number" name="sName" id="sName" required>
+                        </div>
+                    </div>
+
+<!--                    selection -->
+                    <div class="footer-box">
+                        <div class="footer">
+                            <div class="select_box">
+                                <label for="operator"></label>
+                                <select name="selector" id="operator">
+                                    <option value="default">Please Select Operator</option>
+                                    <option value="add">+ Plus</option>
+                                    <option value="minus">- Minus</option>
+                                    <option value="multi">* Multi</option>
+                                    <option value="divide">/ Divide</option>
+                                    <option value="modulus">% Modulus</option>
+                                </select>
+
+                                <div class="button-cal">
+                                    <button class="cal" id="calculate">Calculate</button>
+                                </div>
+                            </div>
+
+                            <!--                    remove -->
+                            <div class="delete-box">
+                                <button class="cal delete" id="delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
