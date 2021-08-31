@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("../vendor/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{}
+
+.main{}
+.box{
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 60%;
+}
+.img-box{
+    width: 50%;
+    margin: 5px auto;
+}
+.list-img{
+    width: 100%;
+}
+
+/*save list*/
+.sav-box{
+    padding: 10px;
+
+}
+.data-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data-input input{
+    width: 60%;
+    border: 2px solid #005EFF;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 6px;
+}
+.btn{
+    padding: 10px 15px ;
+    border-radius: 6px;
+    background: #005EFF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 8px ;
+    transition: 0.5s;
+    border: none;
+}
+.btn:hover{
+    background: #004cc9;
+    color: #000;
+}
+
+.show-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-data td{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: #005EFF;
+    color: #fff;
+    transition: 0.5s;
+    border: none;
+    font-weight: 500;
+}
+
+.primary:hover{
+    background: #0044b9;
+    color: #b9b9b9;
+}
+.danger{
+    background: #ff0048;
+}
+.danger:hover{
+    background: #b50036;
+    color: #c4c4c4;
+
+}

@@ -84,7 +84,58 @@ body{}
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .button button:active{
-    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0 3px 8px;
 
 }
+
+.btn_update{
+    width:100px;
+    height: 50px;
+    background: #3b3b3b;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: inset 0 0 10px 1px #86868650;
+    transition: 0.5s;
+}
+.btn_update_item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    background-image: linear-gradient(to right top, #dd74d5, #fb58b2, #ff3c84, #ff304f, #ff4300);
+    transition: 0.5s;
+    box-shadow:  0 0 10px 1px #888787b8;
+
+}
+
+.update_light{
+    width:100px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: inset 0 0 10px 1px #86868650,
+     0 0 10px 1px rgba(87, 87, 87, 0.72);
+
+
+    transition: 0.5s;
+}
+.update_light_item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: scale(0.9);
+    background-image: linear-gradient(to right top, #dd74d5, #fb58b2, #ff3c84, #ff304f, #ff4300);
+    box-shadow:  0 0 10px 1px rgba(87, 87, 87, 0.72);
+    transition: 0.5s;
+}
+
 
