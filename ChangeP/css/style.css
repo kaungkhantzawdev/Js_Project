@@ -10,5 +10,73 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html{}
-body{}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #e2e2e2;
+
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.box{
+    width: 60%;
+    margin:0 auto;
+}
+
+.img-box{
+    margin: 0 auto;
+    width: 50%;
+}
+.img-box img{
+    width: 100%;
+}
+
+.one{
+
+}
+.one  .text_box{
+    width: 50%;
+    margin: 10px auto;
+    box-shadow: 5px 5px  0 #0083e3;
+    background: #fff;
+
+}
+.one .text_box  h1{
+    font-weight: 600;
+    padding: 10px 0;
+    color: #3F3D56;
+}
+
+.two{}
+
+.two input{
+    width: 50%;
+    border: none;
+    box-shadow: 5px 5px  0 #0083e3;
+    margin: 10px auto;
+    font-size: 15px ;
+    font-weight: 600;
+    outline: none;
+    padding: 10px 15px;
+
+}
+
+.text .color .font{
+
+}
+
+#color{
+    padding: 0 !important;
+    height: 40px;
+}
+
+
+
+
