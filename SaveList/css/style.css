@@ -22,7 +22,7 @@ body{}
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     width: 60%;
 }
 .img-box{
@@ -63,6 +63,7 @@ body{}
     margin-left: 8px ;
     transition: 0.5s;
     border: none;
+    outline: none;
 }
 .btn:hover{
     background: #004cc9;
