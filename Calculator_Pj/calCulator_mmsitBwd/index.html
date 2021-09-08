@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="icon" href="img/calculator.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+</head>
+<body class="">
+
+<div class="mode dark" id="mode">
+    <i class="fas fa-sun fa-lg" id="mode_item"></i>
+</div>
+
+<section class="dark_box" id="box">
+    
+    <div class="dark_cal" id="calculate">
+        <div class="display_box">
+            <div class="display_item" id="textBox">0.00</div>
+        </div>
+        <div class="item_box_one">
+            <button class="dark_btn dark_one" id="ac">AC</button>
+            <button class="dark_btn dark_one" id="c">C</button>
+            <button class="dark_btn dark_one" onclick="calText(`&percnt;`)"  id="modulus">&percnt;</button>
+            <button class="dark_btn" onclick="calText(`&divide;`)"    id="divide">&divide;</button>
+        </div>
+        <div class="item_box_two">
+            <button class="dark_btn" onclick="calText(9)"    id="nine">9</button>
+            <button class="dark_btn" onclick="calText(8)"    id="eight">8</button>
+            <button class="dark_btn" onclick="calText(7)"    id="seven">7</button>
+            <button class="dark_btn" onclick="calText(`&times;`)"    id="time">&times;</button>
+        </div>
+        <div class="item_box_three">
+            <button class="dark_btn" onclick="calText(6)"    id="six">6</button>
+            <button class="dark_btn" onclick="calText(5)"    id="five">5</button>
+            <button class="dark_btn" onclick="calText(4)"    id="four">4</button>
+            <button class="dark_btn" onclick="calText(`&minus;`)"    id="minus">&minus;</button>
+        </div>
+        <div class="item_box_four">
+            <button class="dark_btn" onclick="calText(3)"    id="three">3</button>
+            <button class="dark_btn" onclick="calText(2)"    id="two">2</button>
+            <button class="dark_btn" onclick="calText(1)"    id="one">1</button>
+            <button class="dark_btn" onclick="calText(`&plus;`)"    id="plus">&plus;</button>
+        </div>
+        <div class="item_box_five">
+
+            <button class="dark_btn  btn_two" id="zero" onclick="calText(0)">0</button>
+            <button class="dark_btn     " id="dot" onclick="calText(`&sdot;`)">&sdot;</button>
+            <button class="dark_btn     " id="equal" onclick="">&equals;</button>
+
+        </div>
+    </div>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>

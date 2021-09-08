@@ -1,0 +1,204 @@
+@font-face {
+    font-family: Montserrat,sans-serif;
+    src: url("../vendor/montserrat/Montserrat-Regular.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+}
+
+
+.dark_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #4d4352;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #f8f8f8;
+}
+
+.dark_cal{
+    background: #4d4352;
+    -webkit-box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+    box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+    padding: 15px 15px 7px 15px;
+    border-radius: 18px;
+    color: #f8f8f8;
+}
+.dark_btn{
+    display: inline-block;
+    text-align: center;
+    line-height:60px ;
+    width: 60px;
+    height: 60px;
+    color: #f8f8f8;
+
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    background: #4d4352;
+    -webkit-box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+    box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.dark_btn:hover{
+    color: #FFC445;
+}
+.dark_btn:active{
+    transform: scale(0.9);
+}
+/*.dark_btn:active{*/
+/*    color: #4d4352;*/
+/*    background: #f8f8f8;*/
+/*    -webkit-box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;*/
+/*    box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;*/
+/*}*/
+
+.calculator_box{
+    background: #f8f8f8;
+    /*box-shadow: 5px 5px 10px #352e39, -5px -5px 10px #5b5060;*/
+    -webkit-box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+    padding: 15px 15px 7px 15px;
+    border-radius: 18px;
+    color:  #4d4352;
+}
+
+.display_box{
+    width: 100%;
+}
+.display_item{
+    padding: 10px 15px;
+    font-size: 38px;
+    font-weight: 600;
+    border-radius: 18px;
+    margin:0 0 8px auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 272px;
+}
+
+.item_box_one, .item_box_two, .item_box_three, .item_box_four, .item_box_five{
+    display: flex;
+}
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    line-height:60px ;
+    width: 60px;
+    height: 60px;
+    color:  #4d4352;;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    background: #f8f8f8;
+    -webkit-box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.btn:first-child{
+    margin-left: 0;
+}
+
+.btn:last-child{
+    margin-right: 0;
+    font-size: 30px;
+    color: #9C1DE7;
+}
+
+.dark_btn:first-child{
+    margin-left: 0;
+}
+.dark_btn:last-child{
+    margin-right: 0;
+    font-size: 30px;
+    color: #FFC445;
+}
+
+
+.one{
+    color: rgb(123, 123, 123);
+}
+.dark_one{
+    color: rgb(182, 182, 182);
+}
+.btn_two{
+    flex-grow: 1;
+}
+
+/*dark mode*/
+.mode{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    /*padding: 15px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+    color: #f8f8f8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.light{
+    color:#4d4352;
+    background: #f8f8f8;
+    -webkit-box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+    box-shadow: 5px 5px 10px #e4e4e4, -5px -5px 10px #ffffff;
+}
+.light:active{
+    transform: scale(0.9);
+}
+.dark{
+    background: #4d4352;
+    -webkit-box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+    box-shadow: 5px 5px 10px #453c49, -5px -5px 10px #554a5b;
+}
+.dark:active{
+   transform: scale(0.9);
+}
+
+@media screen and (max-width: 580px) {
+    .mode{
+        bottom: 10px;
+        right: 50px;
+    }
+}
