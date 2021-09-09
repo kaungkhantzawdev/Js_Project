@@ -138,7 +138,54 @@ mode.addEventListener("click", function (){
 
 });
 
+//operator
+let operator = ["+", "-", "*", "/", "%", "."];
+let firstIndex = 0;
+
+
 function calText(data){
-    textBox.innerHTML += data;
+
+    let check = textBox.innerHTML;
+    let lastIndex = check[check.length-1];
+    let firstOp = check[0];
+
+    if(textBox.innerHTML === "0"){
+      return    textBox.innerHTML = data;
+    }else  if(  operator.includes(data) &&  operator.includes(lastIndex)){
+        // console.log(check.substring(0,check.length-1)+data);
+       return  textBox.innerHTML = check.substring(0,check.length-1) + data;
+    }else {
+      return    textBox.innerHTML += data;
+    }
+
 }
+
+
+function del(){
+    let current = textBox.innerHTML;
+    if(current === "0" && current === ''){
+        textBox.innerHTML ="0";
+    }else {
+            textBox.innerHTML = current.substring(0, current.length-1);
+            if(current.length === 1){
+                textBox.innerHTML ="0";
+            }
+    }
+}
+
+
+function  calLate(){
+    let data = textBox.innerHTML;
+    // console.log(data);
+    textBox.innerHTML = eval(data);
+}
+
+function allClear(){
+    textBox.innerHTML = "0";
+}
+
+
+
+
+
 
